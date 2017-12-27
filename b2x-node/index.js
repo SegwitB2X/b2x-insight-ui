@@ -9,7 +9,7 @@ var pkg = require('../package.json');
 var InsightUI = function(options) {
   BaseService.call(this, options);
   this.apiPrefix = options.apiPrefix || 'b2x-insight-api';
-  this.routePrefix = options.routePrefix || '';
+  this.routePrefix = options.routePrefix || 'b2x-insight';
 };
 
 InsightUI.dependencies = ['b2x-insight-api'];

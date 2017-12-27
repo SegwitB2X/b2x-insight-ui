@@ -1,7 +1,7 @@
 {
   "name": "b2x-insight-ui",
   "description": "An open-source frontend for the Segwit2x Insight API. The Insight API provides you with a convenient, powerful and simple way to query and broadcast data on the bitcoin network and build your own services with it.",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "repository": "git://github.com/SegwitB2X/b2x-insight-ui.git",
   "bugs": {
     "url": "https://github.com/SegwitB2X/b2x-insight-ui/issues"
