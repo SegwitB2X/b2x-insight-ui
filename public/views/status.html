@@ -73,6 +73,24 @@
         </tbody>
       </table>
 
+      <h2 translate>Statistics</h2>
+      <table class="table" data-ng-controller="StatusController" data-ng-init="getStats()">
+        <tbody>
+          <tr>
+            <td translate>Adressess with balance</td>
+            <td class="text-right">{{addressesInfo.count_addresses_with_balance}}</td>
+          </tr>
+          <tr>
+            <td translate>Active adressess (24h)</td>
+            <td class="text-right">{{addressesInfo.count_active_addresses}}</td>
+          </tr>
+          <tr>
+            <td translate>Average amount</td>
+            <td class="text-right">{{$root.currency.getConvertion(addressesInfo.average_balance) || addressesInfo.average_balance + ' B2X' }}</td>
+          </tr>
+        </tbody>
+      </table>
+
     </div> <!-- END OF COL-8 -->
 
     <div class="col-xs-12 col-md-4 col-gray">

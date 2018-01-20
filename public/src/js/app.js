@@ -21,6 +21,7 @@ angular.module('insight',[
   'insight.address',
   'insight.search',
   'insight.status',
+  'insight.statsService',
   'insight.connection',
   'insight.currency',
   'insight.messages'
@@ -37,3 +38,4 @@ angular.module('insight.status', []);
 angular.module('insight.connection', []);
 angular.module('insight.currency', []);
 angular.module('insight.messages', []);
+angular.module('insight.statsService', []);

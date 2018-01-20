@@ -850,3 +850,6 @@ a.v_highlight_more {
   }
 }
 
+@media (max-width: 991px) {
+  .transaction-vin-vout.panel.panel-default .panel-body{overflow: hidden;}
+}
