@@ -52,7 +52,10 @@
           <td><a href="block/{{b.hash}}">{{b.height}}</a></td>
           <td>{{b.time * 1000 | date:'medium'}}</td>
           <td class="text-right">{{b.txlength}}</td>
-          <td class="text-right hidden-xs"><a href="{{b.poolInfo.url}}" title="{{b.poolInfo.poolName}}" target="_blank" data-ng-show="b.poolInfo">{{b.poolInfo.poolName}}</a></td>
+          <td class="text-right hidden-xs">
+            <a data-ng-if="b.poolInfo.url" href="{{b.poolInfo.url}}" title="{{b.poolInfo.poolName}}" target="_blank" data-ng-show="b.poolInfo">{{b.poolInfo.poolName}}</a>
+            <span data-ng-if="!b.poolInfo.url" title="{{b.poolInfo.poolName}}">{{b.poolInfo.poolName}}</span>
+          </td>
           <td class="text-right">{{b.size}}</td>
         </tr>
         </tbody>
