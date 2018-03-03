@@ -29,7 +29,7 @@
             <td><span class="ellipsis">{{humanSince(b.time)}}</span></td>
             <td class="text-right">{{b.txlength}}</td>
             <td class="text-right hidden-xs">
-              <a data-ng-if="!b.poolInfo.url" href="{{b.poolInfo.url}}" title="{{b.poolInfo.poolName}}" target="_blank" data-ng-show="b.poolInfo">{{b.poolInfo.poolName}}</a>
+              <a data-ng-if="b.poolInfo.url" href="{{b.poolInfo.url}}" title="{{b.poolInfo.poolName}}" target="_blank" data-ng-show="b.poolInfo">{{b.poolInfo.poolName}}</a>
               <span data-ng-if="!b.poolInfo.url" title="{{b.poolInfo.poolName}}">{{b.poolInfo.poolName}}</span>
             </td>
             <td class="text-right">{{b.size}}</td>
