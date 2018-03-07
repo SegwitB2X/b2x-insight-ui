@@ -1,0 +1,19 @@
+<div data-ng-include src="'views/includes/connection.html'"></div>
+<section data-ng-controller="RichListController" data-ng-init="init()">
+    <div class="row">
+        <h1>Rich List</h1>
+        <table class="table" style="table-layout: fixed">
+            <thead>
+                <th>Address</th>
+                <th>Balance</th>
+            </thead>
+            <tbody>
+                <tr ng-repeat="item in list">
+                    <td><a href="address/{{item.address}}">{{item.address}}</a></td>
+                    <td class="text-left text-muted">{{item.balance}}</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</section>
+
